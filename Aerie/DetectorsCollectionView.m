@@ -53,12 +53,16 @@ static NSString* const kCellIdentifier = @"DetectorCollectionViewCell";
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    return CGSizeMake(self.frame.size.width / 2 - 15, self.frame.size.width / 2 - 15);
+    return CGSizeMake(self.frame.size.width / 2 - 20, self.frame.size.width / 2 - 20);
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    DetectorViewModel *detector = self.roomViewModels[indexPath.row];
-    [self.collectionViewDelegate cellTappedForRoom:detector];
+    if (indexPath.row < self.roomViewModels.count) {
+        DetectorViewModel *detector = self.roomViewModels[indexPath.row];
+        [self.collectionViewDelegate cellTappedForRoom:detector];
+    } else {
+//display add a new detector view controller
+    }
 }
 
 @end
