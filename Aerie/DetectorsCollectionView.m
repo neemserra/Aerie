@@ -21,13 +21,11 @@ static NSString* const kCellIdentifier = @"DetectorCollectionViewCell";
     
     UINib *cellNib = [UINib nibWithNibName:@"DetectorCollectionViewCell" bundle:[NSBundle mainBundle]];
     [self registerNib:cellNib forCellWithReuseIdentifier:kCellIdentifier];
-    DetectorViewModel *livingRoom = [[DetectorViewModel alloc] initWithName:@"Living Room" status:@"Normal"];
-    DetectorViewModel *bedroom = [[DetectorViewModel alloc] initWithName:@"Bed Room" status:@"Normal"];
-    self.roomViewModels = @[livingRoom, bedroom];
 }
 
 -(void)setRoomViewModels:(NSArray *)roomViewModels {
     _roomViewModels = roomViewModels;
+    [self reloadData];
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -61,7 +59,7 @@ static NSString* const kCellIdentifier = @"DetectorCollectionViewCell";
         DetectorViewModel *detector = self.roomViewModels[indexPath.row];
         [self.collectionViewDelegate cellTappedForRoom:detector];
     } else {
-//display add a new detector view controller
+        [self.collectionViewDelegate addNewRoomTapped];
     }
 }
 

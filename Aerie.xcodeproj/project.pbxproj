@@ -26,6 +26,7 @@
 		9B4E0FE31A759F09006DC37A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4E0FE21A759F09006DC37A /* libz.dylib */; };
 		9B4E0FE51A759F13006DC37A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4E0FE41A759F13006DC37A /* libsqlite3.dylib */; };
 		9B4E0FEE1A75B510006DC37A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E0FED1A75B510006DC37A /* MainViewController.m */; };
+		9B57032D1A7F47D4002E69EA /* DetectorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B57032C1A7F47D4002E69EA /* DetectorsViewController.m */; };
 		9B5F57B31A7DDA4B00ADEF03 /* DetectorsCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5F57B21A7DDA4B00ADEF03 /* DetectorsCollectionView.m */; };
 		9B5F57B71A7DDA6900ADEF03 /* DetectorCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5F57B51A7DDA6900ADEF03 /* DetectorCollectionViewCell.m */; };
 		9B5F57B81A7DDA6900ADEF03 /* DetectorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B5F57B61A7DDA6900ADEF03 /* DetectorCollectionViewCell.xib */; };
@@ -70,6 +71,8 @@
 		9B4E0FE41A759F13006DC37A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		9B4E0FEC1A75B510006DC37A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		9B4E0FED1A75B510006DC37A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		9B57032B1A7F47D4002E69EA /* DetectorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectorsViewController.h; sourceTree = "<group>"; };
+		9B57032C1A7F47D4002E69EA /* DetectorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectorsViewController.m; sourceTree = "<group>"; };
 		9B5F57B11A7DDA4B00ADEF03 /* DetectorsCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectorsCollectionView.h; sourceTree = "<group>"; };
 		9B5F57B21A7DDA4B00ADEF03 /* DetectorsCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectorsCollectionView.m; sourceTree = "<group>"; };
 		9B5F57B41A7DDA6900ADEF03 /* DetectorCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectorCollectionViewCell.h; sourceTree = "<group>"; };
@@ -162,6 +165,8 @@
 				9B5F57B61A7DDA6900ADEF03 /* DetectorCollectionViewCell.xib */,
 				9B5F57B91A7DE1A700ADEF03 /* DetectorViewModel.h */,
 				9B5F57BA1A7DE1A700ADEF03 /* DetectorViewModel.m */,
+				9B57032B1A7F47D4002E69EA /* DetectorsViewController.h */,
+				9B57032C1A7F47D4002E69EA /* DetectorsViewController.m */,
 			);
 			path = Aerie;
 			sourceTree = "<group>";
@@ -299,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B57032D1A7F47D4002E69EA /* DetectorsViewController.m in Sources */,
 				9B5F57BB1A7DE1A700ADEF03 /* DetectorViewModel.m in Sources */,
 				9B5F57B31A7DDA4B00ADEF03 /* DetectorsCollectionView.m in Sources */,
 				9B5F57B71A7DDA6900ADEF03 /* DetectorCollectionViewCell.m in Sources */,

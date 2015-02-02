@@ -4,6 +4,7 @@
 @protocol DetectorsCollectionViewDelegate <NSObject>
 
 -(void)cellTappedForRoom:(DetectorViewModel *)roomViewModel;
+-(void)addNewRoomTapped;
 
 @end
 

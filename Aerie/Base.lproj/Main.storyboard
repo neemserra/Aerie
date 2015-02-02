@@ -129,7 +129,7 @@
         <!--Detectors-->
         <scene sceneID="RS8-Re-dcf">
             <objects>
-                <viewController id="170-a3-ebG" sceneMemberID="viewController">
+                <viewController id="170-a3-ebG" customClass="DetectorsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8rP-eX-bp2"/>
                         <viewControllerLayoutGuide type="bottom" id="KsA-fm-Qlf"/>
@@ -179,6 +179,9 @@
                     <tabBarItem key="tabBarItem" title="Detectors" id="HlF-LN-yY1">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="detectorsCollectionView" destination="KlO-TV-gFK" id="WsM-YK-mjR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GSn-s8-rPC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
