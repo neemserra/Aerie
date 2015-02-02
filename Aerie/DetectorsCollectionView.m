@@ -45,7 +45,7 @@ static NSString* const kCellIdentifier = @"DetectorCollectionViewCell";
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    return CGSizeMake(self.frame.size.width / 2 - 20, self.frame.size.width / 2 - 20);
+    return CGSizeMake(self.frame.size.width / 2 - 15, self.frame.size.width / 2 - 15);
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {

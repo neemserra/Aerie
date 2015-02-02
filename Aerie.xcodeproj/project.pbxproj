@@ -30,6 +30,7 @@
 		9B5F57B71A7DDA6900ADEF03 /* DetectorCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5F57B51A7DDA6900ADEF03 /* DetectorCollectionViewCell.m */; };
 		9B5F57B81A7DDA6900ADEF03 /* DetectorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B5F57B61A7DDA6900ADEF03 /* DetectorCollectionViewCell.xib */; };
 		9B5F57BB1A7DE1A700ADEF03 /* DetectorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5F57BA1A7DE1A700ADEF03 /* DetectorViewModel.m */; };
+		9B5F57BE1A7F28ED00ADEF03 /* SettingsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5F57BD1A7F28ED00ADEF03 /* SettingsTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		9B5F57B61A7DDA6900ADEF03 /* DetectorCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetectorCollectionViewCell.xib; sourceTree = "<group>"; };
 		9B5F57B91A7DE1A700ADEF03 /* DetectorViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectorViewModel.h; sourceTree = "<group>"; };
 		9B5F57BA1A7DE1A700ADEF03 /* DetectorViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectorViewModel.m; sourceTree = "<group>"; };
+		9B5F57BC1A7F28ED00ADEF03 /* SettingsTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableView.h; sourceTree = "<group>"; };
+		9B5F57BD1A7F28ED00ADEF03 /* SettingsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +148,8 @@
 				9B4E0FA81A758B29006DC37A /* AppDelegate.h */,
 				9B4E0FA91A758B29006DC37A /* AppDelegate.m */,
 				9B4E0FAE1A758B29006DC37A /* Main.storyboard */,
+				9B5F57BC1A7F28ED00ADEF03 /* SettingsTableView.h */,
+				9B5F57BD1A7F28ED00ADEF03 /* SettingsTableView.m */,
 				9B4E0FB11A758B29006DC37A /* Images.xcassets */,
 				9B4E0FB31A758B29006DC37A /* LaunchScreen.xib */,
 				9B4E0FA41A758B29006DC37A /* Supporting Files */,
@@ -300,6 +305,7 @@
 				9B4E0FAA1A758B29006DC37A /* AppDelegate.m in Sources */,
 				9B4E0FEE1A75B510006DC37A /* MainViewController.m in Sources */,
 				9B4E0FA71A758B29006DC37A /* main.m in Sources */,
+				9B5F57BE1A7F28ED00ADEF03 /* SettingsTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

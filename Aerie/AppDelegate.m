@@ -25,6 +25,13 @@
     if(notificationPayload) {
         // figure out what's in the notificationPayload dictionary
     }
+    
+    [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor lightGrayColor] }
+                                             forState:UIControlStateNormal];
+    [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor whiteColor] }
+                                             forState:UIControlStateSelected];
+
+    
     return YES;
 }
 
