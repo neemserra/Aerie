@@ -31,7 +31,7 @@ static NSString* const kCellIdentifier = @"DetectorCollectionViewCell";
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return self.roomViewModels.count;
+    return self.roomViewModels.count + 1;
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -39,9 +39,17 @@ static NSString* const kCellIdentifier = @"DetectorCollectionViewCell";
 }
 
 -(void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
-    DetectorViewModel *detector = self.roomViewModels[indexPath.row];
+
     DetectorCollectionViewCell *itemCell = (DetectorCollectionViewCell *)cell;
-    [itemCell setRoomViewModel:detector];
+
+    if (indexPath.row < self.roomViewModels.count) {
+        DetectorViewModel *detector = self.roomViewModels[indexPath.row];
+        [itemCell setRoomViewModel:detector];
+    } else {
+        itemCell.backgroundColor = [UIColor clearColor];
+        itemCell.layer.borderColor = [UIColor darkGrayColor].CGColor;
+        itemCell.layer.borderWidth = 2.0f;
+    }
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
