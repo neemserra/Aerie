@@ -1,11 +1,4 @@
-//
-//  AppDelegate.m
-//  Aerie
-//
-//  Created by Neem Serra on 1/25/15.
-//  Copyright (c) 2015 TEAM. All rights reserved.
-//
-
+#import <Parse/Parse.h>
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
@@ -16,8 +9,35 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [Parse setApplicationId:@"hDYfKAEThkm2emN2IBpnGpWOizlz6o7lypTbHkJs"
+                  clientKey:@"7Oun0l803ROnfeQBvDzL4hBYvZaZSbzMNBzxPpuY"];
+    
+    if ([application respondsToSelector:@selector(registerUserNotificationSettings:)]) {
+        UIUserNotificationSettings* notificationSettings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound categories:nil];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:notificationSettings];
+        [[UIApplication sharedApplication] registerForRemoteNotifications];
+    } else {
+        [[UIApplication sharedApplication] registerForRemoteNotificationTypes: (UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+    }
+    
+    
+    NSDictionary *notificationPayload = launchOptions[UIApplicationLaunchOptionsRemoteNotificationKey];
+    if(notificationPayload) {
+        // figure out what's in the notificationPayload dictionary
+    }
     return YES;
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    // Store the deviceToken in the current installation and save it to Parse.
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    currentInstallation.channels = @[ @"global" ];
+    [currentInstallation saveInBackground];
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [PFPush handlePush:userInfo];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -41,5 +61,6 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
 
 @end
