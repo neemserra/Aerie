@@ -1,10 +1,12 @@
 #import "DetectorsCollectionView.h"
 #import "DetectorsViewController.h"
 #import "DetectorViewModel.h"
+#import "DetectorStatusViewController.h"
 
 @interface DetectorsViewController () <DetectorsCollectionViewDelegate>
 
 @property (weak, nonatomic) IBOutlet DetectorsCollectionView *detectorsCollectionView;
+@property (nonatomic) DetectorViewModel *selectedDetectorViewModel;
 
 @end
 
@@ -23,18 +25,15 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    DetectorStatusViewController *detectorStatusViewController = [segue destinationViewController];
+    [detectorStatusViewController setDetectorViewModel:self.selectedDetectorViewModel];
 }
-*/
+
 
 -(void)cellTappedForRoom:(DetectorViewModel *)roomViewModel {
-    
+    self.selectedDetectorViewModel = roomViewModel;
+    [self performSegueWithIdentifier:@"DetectorStatusViewController" sender:self];
 }
 
 -(void)addNewRoomTapped {

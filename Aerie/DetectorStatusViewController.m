@@ -1,22 +1,17 @@
-//
-//  MainViewController.m
-//  Aerie
-//
-//  Created by Neem Serra on 1/25/15.
-//  Copyright (c) 2015 TEAM. All rights reserved.
-//
+#import "DetectorStatusViewController.h"
+#import "DetectorStatusView.h"
 
-#import "MainViewController.h"
+@interface DetectorStatusViewController ()
 
-@interface MainViewController ()
+@property (nonatomic) DetectorViewModel *detectorViewModel;
 
 @end
 
-@implementation MainViewController
+@implementation DetectorStatusViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = self.detectorViewModel.backgroundColor;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,5 +28,11 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+-(void)setDetectorViewModel:(DetectorViewModel *)detectorViewModel {
+    _detectorViewModel = detectorViewModel;
+    DetectorStatusView *view = (DetectorStatusView *)self.view;
+    [view setDetectorViewModel:detectorViewModel];
+}
 
 @end

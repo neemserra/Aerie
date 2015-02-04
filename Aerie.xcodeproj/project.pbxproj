@@ -25,7 +25,8 @@
 		9B4E0FDF1A759EEF006DC37A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4E0FDE1A759EEF006DC37A /* SystemConfiguration.framework */; };
 		9B4E0FE31A759F09006DC37A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4E0FE21A759F09006DC37A /* libz.dylib */; };
 		9B4E0FE51A759F13006DC37A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4E0FE41A759F13006DC37A /* libsqlite3.dylib */; };
-		9B4E0FEE1A75B510006DC37A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E0FED1A75B510006DC37A /* MainViewController.m */; };
+		9B53FCDF1A81DBE9002589CC /* DetectorStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B53FCDE1A81DBE9002589CC /* DetectorStatusViewController.m */; };
+		9B53FCE21A81E098002589CC /* DetectorStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B53FCE11A81E098002589CC /* DetectorStatusView.m */; };
 		9B57032D1A7F47D4002E69EA /* DetectorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B57032C1A7F47D4002E69EA /* DetectorsViewController.m */; };
 		9B5F57B31A7DDA4B00ADEF03 /* DetectorsCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5F57B21A7DDA4B00ADEF03 /* DetectorsCollectionView.m */; };
 		9B5F57B71A7DDA6900ADEF03 /* DetectorCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5F57B51A7DDA6900ADEF03 /* DetectorCollectionViewCell.m */; };
@@ -69,8 +70,10 @@
 		9B4E0FDE1A759EEF006DC37A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		9B4E0FE21A759F09006DC37A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		9B4E0FE41A759F13006DC37A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		9B4E0FEC1A75B510006DC37A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		9B4E0FED1A75B510006DC37A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		9B53FCDD1A81DBE9002589CC /* DetectorStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectorStatusViewController.h; sourceTree = "<group>"; };
+		9B53FCDE1A81DBE9002589CC /* DetectorStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectorStatusViewController.m; sourceTree = "<group>"; };
+		9B53FCE01A81E098002589CC /* DetectorStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectorStatusView.h; sourceTree = "<group>"; };
+		9B53FCE11A81E098002589CC /* DetectorStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectorStatusView.m; sourceTree = "<group>"; };
 		9B57032B1A7F47D4002E69EA /* DetectorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectorsViewController.h; sourceTree = "<group>"; };
 		9B57032C1A7F47D4002E69EA /* DetectorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectorsViewController.m; sourceTree = "<group>"; };
 		9B5F57B11A7DDA4B00ADEF03 /* DetectorsCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectorsCollectionView.h; sourceTree = "<group>"; };
@@ -151,22 +154,15 @@
 				9B4E0FA81A758B29006DC37A /* AppDelegate.h */,
 				9B4E0FA91A758B29006DC37A /* AppDelegate.m */,
 				9B4E0FAE1A758B29006DC37A /* Main.storyboard */,
+				9B53FCE31A81E0A3002589CC /* Detector Status */,
 				9B5F57BC1A7F28ED00ADEF03 /* SettingsTableView.h */,
 				9B5F57BD1A7F28ED00ADEF03 /* SettingsTableView.m */,
 				9B4E0FB11A758B29006DC37A /* Images.xcassets */,
 				9B4E0FB31A758B29006DC37A /* LaunchScreen.xib */,
 				9B4E0FA41A758B29006DC37A /* Supporting Files */,
-				9B4E0FEC1A75B510006DC37A /* MainViewController.h */,
-				9B4E0FED1A75B510006DC37A /* MainViewController.m */,
-				9B5F57B11A7DDA4B00ADEF03 /* DetectorsCollectionView.h */,
-				9B5F57B21A7DDA4B00ADEF03 /* DetectorsCollectionView.m */,
-				9B5F57B41A7DDA6900ADEF03 /* DetectorCollectionViewCell.h */,
-				9B5F57B51A7DDA6900ADEF03 /* DetectorCollectionViewCell.m */,
-				9B5F57B61A7DDA6900ADEF03 /* DetectorCollectionViewCell.xib */,
+				9B53FCE41A81E0BC002589CC /* Detectors Main View */,
 				9B5F57B91A7DE1A700ADEF03 /* DetectorViewModel.h */,
 				9B5F57BA1A7DE1A700ADEF03 /* DetectorViewModel.m */,
-				9B57032B1A7F47D4002E69EA /* DetectorsViewController.h */,
-				9B57032C1A7F47D4002E69EA /* DetectorsViewController.m */,
 			);
 			path = Aerie;
 			sourceTree = "<group>";
@@ -195,6 +191,31 @@
 				9B4E0FBF1A758B29006DC37A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9B53FCE31A81E0A3002589CC /* Detector Status */ = {
+			isa = PBXGroup;
+			children = (
+				9B53FCDD1A81DBE9002589CC /* DetectorStatusViewController.h */,
+				9B53FCDE1A81DBE9002589CC /* DetectorStatusViewController.m */,
+				9B53FCE01A81E098002589CC /* DetectorStatusView.h */,
+				9B53FCE11A81E098002589CC /* DetectorStatusView.m */,
+			);
+			name = "Detector Status";
+			sourceTree = "<group>";
+		};
+		9B53FCE41A81E0BC002589CC /* Detectors Main View */ = {
+			isa = PBXGroup;
+			children = (
+				9B5F57B11A7DDA4B00ADEF03 /* DetectorsCollectionView.h */,
+				9B5F57B21A7DDA4B00ADEF03 /* DetectorsCollectionView.m */,
+				9B5F57B41A7DDA6900ADEF03 /* DetectorCollectionViewCell.h */,
+				9B5F57B51A7DDA6900ADEF03 /* DetectorCollectionViewCell.m */,
+				9B5F57B61A7DDA6900ADEF03 /* DetectorCollectionViewCell.xib */,
+				9B57032B1A7F47D4002E69EA /* DetectorsViewController.h */,
+				9B57032C1A7F47D4002E69EA /* DetectorsViewController.m */,
+			);
+			name = "Detectors Main View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,8 +330,9 @@
 				9B5F57B31A7DDA4B00ADEF03 /* DetectorsCollectionView.m in Sources */,
 				9B5F57B71A7DDA6900ADEF03 /* DetectorCollectionViewCell.m in Sources */,
 				9B4E0FAA1A758B29006DC37A /* AppDelegate.m in Sources */,
-				9B4E0FEE1A75B510006DC37A /* MainViewController.m in Sources */,
 				9B4E0FA71A758B29006DC37A /* main.m in Sources */,
+				9B53FCDF1A81DBE9002589CC /* DetectorStatusViewController.m in Sources */,
+				9B53FCE21A81E098002589CC /* DetectorStatusView.m in Sources */,
 				9B5F57BE1A7F28ED00ADEF03 /* SettingsTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,7 +461,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Aerie/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -456,7 +478,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Aerie/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
