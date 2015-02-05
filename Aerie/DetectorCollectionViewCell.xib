@@ -18,7 +18,7 @@
                             <constraint firstAttribute="height" constant="100" id="CXt-En-Mjj"/>
                             <constraint firstAttribute="width" constant="100" id="qpi-Zr-JL3"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                         <variation key="default">

@@ -28,6 +28,7 @@
                                              forState:UIControlStateNormal];
     [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor whiteColor] }
                                              forState:UIControlStateSelected];
+    [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
 
     
     return YES;

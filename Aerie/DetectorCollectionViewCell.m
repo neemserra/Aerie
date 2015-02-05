@@ -10,7 +10,7 @@
 
 -(void)setRoomViewModel:(DetectorViewModel *)room {
     self.roomNameLabel.text = room.roomNameString;
-//    self.backgroundColor = room.backgroundColor;
+    self.backgroundColor = room.backgroundColor;
 }
 
 

@@ -3,7 +3,7 @@
 #import "DetectorViewModel.h"
 #import "DetectorStatusViewController.h"
 
-@interface DetectorsViewController () <DetectorsCollectionViewDelegate>
+@interface DetectorsViewController () <DetectorsCollectionViewDelegate, DetectorStatusViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet DetectorsCollectionView *detectorsCollectionView;
 @property (nonatomic) DetectorViewModel *selectedDetectorViewModel;
@@ -15,18 +15,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     DetectorViewModel *livingRoom = [[DetectorViewModel alloc] initWithName:@"Living Room" status:@"Normal"];
-    DetectorViewModel *bedroom = [[DetectorViewModel alloc] initWithName:@"Bed Room" status:@"Normal"];
-    [self.detectorsCollectionView setRoomViewModels:@[livingRoom, bedroom]];
+    DetectorViewModel *diningRoom = [[DetectorViewModel alloc] initWithName:@"Dining Room" status:@"Normal"];
+    DetectorViewModel *kitchen = [[DetectorViewModel alloc] initWithName:@"Kitchen" status:@"Smoke Detected!"];
+    [self.detectorsCollectionView setRoomViewModels:@[livingRoom, diningRoom, kitchen]];
     self.detectorsCollectionView.collectionViewDelegate = self;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     DetectorStatusViewController *detectorStatusViewController = [segue destinationViewController];
+    detectorStatusViewController.delegate = self;
     [detectorStatusViewController setDetectorViewModel:self.selectedDetectorViewModel];
 }
 
@@ -34,6 +31,10 @@
 -(void)cellTappedForRoom:(DetectorViewModel *)roomViewModel {
     self.selectedDetectorViewModel = roomViewModel;
     [self performSegueWithIdentifier:@"DetectorStatusViewController" sender:self];
+}
+
+-(void)backButtonTapped {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 -(void)addNewRoomTapped {
