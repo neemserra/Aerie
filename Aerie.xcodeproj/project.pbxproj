@@ -25,8 +25,8 @@
 		9B4E0FE51A759F13006DC37A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4E0FE41A759F13006DC37A /* libsqlite3.dylib */; };
 		9B53FCDF1A81DBE9002589CC /* DetectorStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B53FCDE1A81DBE9002589CC /* DetectorStatusViewController.m */; };
 		9B53FCE21A81E098002589CC /* DetectorStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B53FCE11A81E098002589CC /* DetectorStatusView.m */; };
-		9B53FCE71A8317D1002589CC /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B53FCE51A8317D1002589CC /* Bolts.framework */; };
-		9B53FCE81A8317D1002589CC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B53FCE61A8317D1002589CC /* Parse.framework */; };
+		9B53FCEB1A831895002589CC /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B53FCE91A831895002589CC /* Bolts.framework */; };
+		9B53FCEC1A831895002589CC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B53FCEA1A831895002589CC /* Parse.framework */; };
 		9B57032D1A7F47D4002E69EA /* DetectorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B57032C1A7F47D4002E69EA /* DetectorsViewController.m */; };
 		9B5F57B31A7DDA4B00ADEF03 /* DetectorsCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5F57B21A7DDA4B00ADEF03 /* DetectorsCollectionView.m */; };
 		9B5F57B71A7DDA6900ADEF03 /* DetectorCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5F57B51A7DDA6900ADEF03 /* DetectorCollectionViewCell.m */; };
@@ -57,8 +57,6 @@
 		9B4E0FBA1A758B29006DC37A /* AerieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AerieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B4E0FBF1A758B29006DC37A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B4E0FC01A758B29006DC37A /* AerieTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AerieTests.m; sourceTree = "<group>"; };
-		9B4E0FCA1A759E41006DC37A /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		9B4E0FCB1A759E41006DC37A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		9B4E0FCE1A759E93006DC37A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		9B4E0FD01A759EA4006DC37A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		9B4E0FD21A759EA8006DC37A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -74,8 +72,8 @@
 		9B53FCDE1A81DBE9002589CC /* DetectorStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectorStatusViewController.m; sourceTree = "<group>"; };
 		9B53FCE01A81E098002589CC /* DetectorStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectorStatusView.h; sourceTree = "<group>"; };
 		9B53FCE11A81E098002589CC /* DetectorStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectorStatusView.m; sourceTree = "<group>"; };
-		9B53FCE51A8317D1002589CC /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../Downloads/parse-library-1.6.2-1/Bolts.framework"; sourceTree = "<group>"; };
-		9B53FCE61A8317D1002589CC /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../Downloads/parse-library-1.6.2-1/Parse.framework"; sourceTree = "<group>"; };
+		9B53FCE91A831895002589CC /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../Downloads/parse-library-1.6.2/Bolts.framework"; sourceTree = "<group>"; };
+		9B53FCEA1A831895002589CC /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../Downloads/parse-library-1.6.2/Parse.framework"; sourceTree = "<group>"; };
 		9B57032B1A7F47D4002E69EA /* DetectorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectorsViewController.h; sourceTree = "<group>"; };
 		9B57032C1A7F47D4002E69EA /* DetectorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectorsViewController.m; sourceTree = "<group>"; };
 		9B5F57B11A7DDA4B00ADEF03 /* DetectorsCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectorsCollectionView.h; sourceTree = "<group>"; };
@@ -94,8 +92,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B53FCE71A8317D1002589CC /* Bolts.framework in Frameworks */,
-				9B53FCE81A8317D1002589CC /* Parse.framework in Frameworks */,
+				9B53FCEB1A831895002589CC /* Bolts.framework in Frameworks */,
+				9B53FCEC1A831895002589CC /* Parse.framework in Frameworks */,
 				9B4E0FE51A759F13006DC37A /* libsqlite3.dylib in Frameworks */,
 				9B4E0FE31A759F09006DC37A /* libz.dylib in Frameworks */,
 				9B4E0FDF1A759EEF006DC37A /* SystemConfiguration.framework in Frameworks */,
@@ -122,8 +120,8 @@
 		9B4E0F981A758B28006DC37A = {
 			isa = PBXGroup;
 			children = (
-				9B53FCE51A8317D1002589CC /* Bolts.framework */,
-				9B53FCE61A8317D1002589CC /* Parse.framework */,
+				9B53FCE91A831895002589CC /* Bolts.framework */,
+				9B53FCEA1A831895002589CC /* Parse.framework */,
 				9B4E0FE41A759F13006DC37A /* libsqlite3.dylib */,
 				9B4E0FE21A759F09006DC37A /* libz.dylib */,
 				9B4E0FDE1A759EEF006DC37A /* SystemConfiguration.framework */,
@@ -135,8 +133,6 @@
 				9B4E0FD21A759EA8006DC37A /* CFNetwork.framework */,
 				9B4E0FD01A759EA4006DC37A /* CoreFoundation.framework */,
 				9B4E0FCE1A759E93006DC37A /* AudioToolbox.framework */,
-				9B4E0FCA1A759E41006DC37A /* Bolts.framework */,
-				9B4E0FCB1A759E41006DC37A /* Parse.framework */,
 				9B4E0FA31A758B29006DC37A /* Aerie */,
 				9B4E0FBD1A758B29006DC37A /* AerieTests */,
 				9B4E0FA21A758B29006DC37A /* Products */,
@@ -464,6 +460,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"/Users/neem/Downloads/parse-library-1.6.2-1",
+					"/Users/neem/Downloads/parse-library-1.6.2",
 				);
 				INFOPLIST_FILE = Aerie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -482,6 +479,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"/Users/neem/Downloads/parse-library-1.6.2-1",
+					"/Users/neem/Downloads/parse-library-1.6.2",
 				);
 				INFOPLIST_FILE = Aerie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
