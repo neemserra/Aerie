@@ -21,7 +21,12 @@
     
     NSDictionary *notificationPayload = launchOptions[UIApplicationLaunchOptionsRemoteNotificationKey];
     if(notificationPayload) {
-        // figure out what's in the notificationPayload dictionary
+        NSString *message = [notificationPayload objectForKey:@"alert"];
+        if ([message containsString:@"Living Room"]) {
+            //change status of living room
+        } else if ([message containsString:@"Dining Room"]) {
+            //change status of dining room
+        }
     }
     
     [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor lightGrayColor] }
@@ -44,6 +49,12 @@
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
     [PFPush handlePush:userInfo];
+    NSString *message = [userInfo objectForKey:@"alert"];
+    if ([message containsString:@"Living Room"]) {
+        //change status of living room
+    } else if ([message containsString:@"Dining Room"]) {
+        //change status of dining room
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
