@@ -42,16 +42,19 @@ static NSString* const kCellIdentifier = @"DetectorCollectionViewCell";
 
     if (indexPath.row < self.roomViewModels.count) {
         DetectorViewModel *detector = self.roomViewModels[indexPath.row];
+        itemCell.addimage.hidden = YES;
         [itemCell setRoomViewModel:detector];
     } else {
         itemCell.backgroundColor = [UIColor clearColor];
-        itemCell.layer.borderColor = [UIColor darkGrayColor].CGColor;
+        itemCell.layer.borderColor = [UIColor lightGrayColor].CGColor;
         itemCell.layer.borderWidth = 2.0f;
+        [itemCell setRoomViewModel:nil];
+        itemCell.addimage.hidden = NO;
     }
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    return CGSizeMake(self.frame.size.width / 2 - 20, self.frame.size.width / 2 - 20);
+    return CGSizeMake(self.frame.size.width / 2 - 15, self.frame.size.width / 2 - 15);
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {

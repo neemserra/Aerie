@@ -37,14 +37,20 @@
 		9B4E0FE51A759F13006DC37A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4E0FE41A759F13006DC37A /* libsqlite3.dylib */; };
 		9B53FCDF1A81DBE9002589CC /* DetectorStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B53FCDE1A81DBE9002589CC /* DetectorStatusViewController.m */; };
 		9B53FCE21A81E098002589CC /* DetectorStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B53FCE11A81E098002589CC /* DetectorStatusView.m */; };
-		9B53FCEB1A831895002589CC /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B53FCE91A831895002589CC /* Bolts.framework */; };
-		9B53FCEC1A831895002589CC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B53FCEA1A831895002589CC /* Parse.framework */; };
 		9B57032D1A7F47D4002E69EA /* DetectorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B57032C1A7F47D4002E69EA /* DetectorsViewController.m */; };
 		9B5F57B31A7DDA4B00ADEF03 /* DetectorsCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5F57B21A7DDA4B00ADEF03 /* DetectorsCollectionView.m */; };
 		9B5F57B71A7DDA6900ADEF03 /* DetectorCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5F57B51A7DDA6900ADEF03 /* DetectorCollectionViewCell.m */; };
 		9B5F57B81A7DDA6900ADEF03 /* DetectorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B5F57B61A7DDA6900ADEF03 /* DetectorCollectionViewCell.xib */; };
 		9B5F57BB1A7DE1A700ADEF03 /* DetectorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5F57BA1A7DE1A700ADEF03 /* DetectorViewModel.m */; };
 		9B5F57BE1A7F28ED00ADEF03 /* SettingsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5F57BD1A7F28ED00ADEF03 /* SettingsTableView.m */; };
+		E047189E1A84558800F20EB6 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = E047189C1A84558800F20EB6 /* add.png */; };
+		E047189F1A84558800F20EB6 /* add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E047189D1A84558800F20EB6 /* add@2x.png */; };
+		E06AE46E1A8451370001FCDC /* arrow-red.png in Resources */ = {isa = PBXBuildFile; fileRef = E06AE46A1A8451370001FCDC /* arrow-red.png */; };
+		E06AE46F1A8451370001FCDC /* arrow-red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E06AE46B1A8451370001FCDC /* arrow-red@2x.png */; };
+		E06AE4701A8451370001FCDC /* arrow-white.png in Resources */ = {isa = PBXBuildFile; fileRef = E06AE46C1A8451370001FCDC /* arrow-white.png */; };
+		E06AE4711A8451370001FCDC /* arrow-white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E06AE46D1A8451370001FCDC /* arrow-white@2x.png */; };
+		E0E915D91A84571000932103 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = E0E915D71A84571000932103 /* splash.png */; };
+		E0E915DA1A84571000932103 /* splash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0E915D81A84571000932103 /* splash@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +115,14 @@
 		9B5F57BA1A7DE1A700ADEF03 /* DetectorViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectorViewModel.m; sourceTree = "<group>"; };
 		9B5F57BC1A7F28ED00ADEF03 /* SettingsTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableView.h; sourceTree = "<group>"; };
 		9B5F57BD1A7F28ED00ADEF03 /* SettingsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableView.m; sourceTree = "<group>"; };
+		E047189C1A84558800F20EB6 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		E047189D1A84558800F20EB6 /* add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add@2x.png"; sourceTree = "<group>"; };
+		E06AE46A1A8451370001FCDC /* arrow-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-red.png"; sourceTree = "<group>"; };
+		E06AE46B1A8451370001FCDC /* arrow-red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-red@2x.png"; sourceTree = "<group>"; };
+		E06AE46C1A8451370001FCDC /* arrow-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-white.png"; sourceTree = "<group>"; };
+		E06AE46D1A8451370001FCDC /* arrow-white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-white@2x.png"; sourceTree = "<group>"; };
+		E0E915D71A84571000932103 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
+		E0E915D81A84571000932103 /* splash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +130,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B53FCEB1A831895002589CC /* Bolts.framework in Frameworks */,
-				9B53FCEC1A831895002589CC /* Parse.framework in Frameworks */,
 				9B4E0FE51A759F13006DC37A /* libsqlite3.dylib in Frameworks */,
 				9B4E0FE31A759F09006DC37A /* libz.dylib in Frameworks */,
 				9B4E0FDF1A759EEF006DC37A /* SystemConfiguration.framework in Frameworks */,
@@ -144,6 +156,14 @@
 		9B30F5BE1A831C8C00A6FD34 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E0E915D71A84571000932103 /* splash.png */,
+				E0E915D81A84571000932103 /* splash@2x.png */,
+				E047189C1A84558800F20EB6 /* add.png */,
+				E047189D1A84558800F20EB6 /* add@2x.png */,
+				E06AE46A1A8451370001FCDC /* arrow-red.png */,
+				E06AE46B1A8451370001FCDC /* arrow-red@2x.png */,
+				E06AE46C1A8451370001FCDC /* arrow-white.png */,
+				E06AE46D1A8451370001FCDC /* arrow-white@2x.png */,
 				9B30F5A61A831C8100A6FD34 /* detectors-fill.png */,
 				9B30F5A71A831C8100A6FD34 /* detectors-fill@2x.png */,
 				9B30F5A81A831C8100A6FD34 /* detectors-hollow.png */,
@@ -348,21 +368,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E047189E1A84558800F20EB6 /* add.png in Resources */,
+				E06AE46E1A8451370001FCDC /* arrow-red.png in Resources */,
 				9B5F57B81A7DDA6900ADEF03 /* DetectorCollectionViewCell.xib in Resources */,
 				9B30F5B91A831C8100A6FD34 /* emergency-hollow@2x.png in Resources */,
 				9B30F5B31A831C8100A6FD34 /* detectors-fill@2x.png in Resources */,
 				9B30F5B81A831C8100A6FD34 /* emergency-hollow.png in Resources */,
+				E06AE4701A8451370001FCDC /* arrow-white.png in Resources */,
 				9B30F5BA1A831C8100A6FD34 /* settings-fill.png in Resources */,
 				9B4E0FB01A758B29006DC37A /* Main.storyboard in Resources */,
 				9B30F5BD1A831C8100A6FD34 /* settings-hollow@2x.png in Resources */,
+				E047189F1A84558800F20EB6 /* add@2x.png in Resources */,
 				9B30F5BC1A831C8100A6FD34 /* settings-hollow.png in Resources */,
 				9B30F5B71A831C8100A6FD34 /* emergency-fill@2x.png in Resources */,
+				E0E915DA1A84571000932103 /* splash@2x.png in Resources */,
 				9B30F5B51A831C8100A6FD34 /* detectors-hollow@2x.png in Resources */,
+				E06AE4711A8451370001FCDC /* arrow-white@2x.png in Resources */,
 				9B30F5BB1A831C8100A6FD34 /* settings-fill@2x.png in Resources */,
 				9B30F5B21A831C8100A6FD34 /* detectors-fill.png in Resources */,
 				9B4E0FB51A758B29006DC37A /* LaunchScreen.xib in Resources */,
 				9B30F5B61A831C8100A6FD34 /* emergency-fill.png in Resources */,
+				E0E915D91A84571000932103 /* splash.png in Resources */,
 				9B4E0FB21A758B29006DC37A /* Images.xcassets in Resources */,
+				E06AE46F1A8451370001FCDC /* arrow-red@2x.png in Resources */,
 				9B30F5B41A831C8100A6FD34 /* detectors-hollow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,7 +539,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Neem Serra (S9VVDXN7WJ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
