@@ -1,80 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DbL-yY-lgr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6221" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DbL-yY-lgr">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Emergency Plan-->
         <scene sceneID="2PA-SB-qd7">
             <objects>
-                <viewController id="6D6-SO-qjn" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="X06-fZ-L3W"/>
-                        <viewControllerLayoutGuide type="bottom" id="z4v-uf-uQK"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="x5h-Qs-dqr">
+                <viewController id="6D6-SO-qjn" customClass="EmergencyContactsViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="wlm-JL-sYY" customClass="EmergencyContactsView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="qsD-77-VHA">
-                                <rect key="frame" x="0.0" y="20" width="600" height="400"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="Rni-42-RUh"/>
-                                </constraints>
-                            </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSW-mP-V5Q">
-                                <rect key="frame" x="0.0" y="511" width="600" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="HA7-QC-7Hj"/>
-                                    <constraint firstAttribute="height" constant="30" id="lxg-rx-BCj"/>
-                                </constraints>
-                                <state key="normal" title="Floor Plan">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="lxg-rx-BCj"/>
-                                    </mask>
-                                </variation>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add Notes" translatesAutoresizingMaskIntoConstraints="NO" id="VDB-SZ-mxG">
-                                <rect key="frame" x="0.0" y="430" width="600" height="71"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="Ddh-nA-vqN"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Ddh-nA-vqN"/>
-                                    </mask>
-                                </variation>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.95000000000000007" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="z4v-uf-uQK" firstAttribute="top" secondItem="YSW-mP-V5Q" secondAttribute="bottom" constant="10" id="1T0-Kz-f1h"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="qsD-77-VHA" secondAttribute="trailing" constant="-16" id="MMN-UH-nla"/>
-                            <constraint firstItem="qsD-77-VHA" firstAttribute="top" secondItem="X06-fZ-L3W" secondAttribute="bottom" id="VbS-Wr-tWM"/>
-                            <constraint firstItem="YSW-mP-V5Q" firstAttribute="leading" secondItem="x5h-Qs-dqr" secondAttribute="leadingMargin" constant="-16" id="XB5-FG-3ZH"/>
-                            <constraint firstItem="VDB-SZ-mxG" firstAttribute="top" secondItem="qsD-77-VHA" secondAttribute="bottom" constant="10" id="cxG-xK-lrS"/>
-                            <constraint firstItem="YSW-mP-V5Q" firstAttribute="top" secondItem="VDB-SZ-mxG" secondAttribute="bottom" constant="10" id="g2j-HN-t2h"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="YSW-mP-V5Q" secondAttribute="trailing" constant="-16" id="hc8-BX-4u0"/>
-                            <constraint firstItem="qsD-77-VHA" firstAttribute="leading" secondItem="x5h-Qs-dqr" secondAttribute="leadingMargin" constant="-16" id="hdn-Vf-7F6"/>
-                            <constraint firstItem="VDB-SZ-mxG" firstAttribute="leading" secondItem="x5h-Qs-dqr" secondAttribute="leadingMargin" constant="-16" id="sXD-6c-3BT"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="VDB-SZ-mxG" secondAttribute="trailing" constant="-16" id="yXC-hb-rLr"/>
-                        </constraints>
-                    </view>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    </tableView>
                     <tabBarItem key="tabBarItem" title="Emergency Plan" image="emergency-fill.png" id="xqD-XF-fTg"/>
+                    <navigationItem key="navigationItem" id="api-8S-KTy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rKd-SL-UXS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2134" y="298"/>
+            <point key="canvasLocation" x="2866" y="258"/>
         </scene>
         <!--Settings-->
         <scene sceneID="60O-I5-0bV">
@@ -105,7 +50,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qLy-3H-Rou" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2134" y="996"/>
+            <point key="canvasLocation" x="1832" y="994"/>
         </scene>
         <!--Detectors-->
         <scene sceneID="RS8-Re-dcf">
@@ -301,6 +246,23 @@
             </objects>
             <point key="canvasLocation" x="2834" y="-478"/>
         </scene>
+        <!--Emergency Plan-->
+        <scene sceneID="ac3-2k-gra">
+            <objects>
+                <navigationController id="Jok-PA-gOJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Emergency Plan" id="b4k-pe-Lt8"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="94G-3V-dCp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6D6-SO-qjn" kind="relationship" relationship="rootViewController" id="a3L-YG-F6U"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="phV-TE-diA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2096" y="250"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Jic-2y-bBD">
             <objects>
@@ -316,8 +278,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="170-a3-ebG" kind="relationship" relationship="viewControllers" id="8qO-ga-17n"/>
-                        <segue destination="6D6-SO-qjn" kind="relationship" relationship="viewControllers" id="tCH-SD-bfP"/>
-                        <segue destination="dCk-BL-2Cn" kind="relationship" relationship="viewControllers" id="4T2-9Q-wel"/>
+                        <segue destination="Jok-PA-gOJ" kind="relationship" relationship="viewControllers" id="pdq-pO-edc"/>
+                        <segue destination="dCk-BL-2Cn" kind="relationship" relationship="viewControllers" id="b8G-WW-5vf"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fy7-ss-uyP" userLabel="First Responder" sceneMemberID="firstResponder"/>
