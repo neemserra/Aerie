@@ -23,6 +23,8 @@
         self.emergencyContactsButton.hidden = YES;
         self.turnOffAlarmButton.hidden = YES;
     }
+    self.turnOffAlarmButton.layer.borderColor = [UIColor whiteColor].CGColor;
+    self.turnOffAlarmButton.layer.borderWidth = 1.0f;
 }
 
 - (IBAction)backButton:(id)sender {

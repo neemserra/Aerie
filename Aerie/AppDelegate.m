@@ -1,4 +1,4 @@
-#import <Parse/Parse.h>
+//#import <Parse/Parse.h>
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
@@ -9,8 +9,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [Parse setApplicationId:@"hDYfKAEThkm2emN2IBpnGpWOizlz6o7lypTbHkJs"
-                  clientKey:@"7Oun0l803ROnfeQBvDzL4hBYvZaZSbzMNBzxPpuY"];
+//    [Parse setApplicationId:@"hDYfKAEThkm2emN2IBpnGpWOizlz6o7lypTbHkJs"
+//                  clientKey:@"7Oun0l803ROnfeQBvDzL4hBYvZaZSbzMNBzxPpuY"];
     UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert |
                                                     UIUserNotificationTypeBadge |
                                                     UIUserNotificationTypeSound);
@@ -40,15 +40,15 @@
 }
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    // Store the deviceToken in the current installation and save it to Parse.
-    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
-    [currentInstallation setDeviceTokenFromData:deviceToken];
-    currentInstallation.channels = @[ @"global" ];
-    [currentInstallation saveInBackground];
+//    // Store the deviceToken in the current installation and save it to Parse.
+//    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+//    [currentInstallation setDeviceTokenFromData:deviceToken];
+//    currentInstallation.channels = @[ @"global" ];
+//    [currentInstallation saveInBackground];
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-    [PFPush handlePush:userInfo];
+//    [PFPush handlePush:userInfo];
     NSString *message = [userInfo objectForKey:@"alert"];
     if ([message containsString:@"Living Room"]) {
         //change status of living room
