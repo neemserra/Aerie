@@ -2,6 +2,7 @@
 #import "DetectorsViewController.h"
 #import "DetectorViewModel.h"
 #import "DetectorStatusViewController.h"
+#import "AppDelegate.h"
 
 @interface DetectorsViewController () <DetectorsCollectionViewDelegate, DetectorStatusViewControllerDelegate>
 
@@ -14,10 +15,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    DetectorViewModel *livingRoom = [[DetectorViewModel alloc] initWithName:@"Living Room" status:@"Normal"];
-    DetectorViewModel *diningRoom = [[DetectorViewModel alloc] initWithName:@"Dining Room" status:@"Normal"];
-    DetectorViewModel *kitchen = [[DetectorViewModel alloc] initWithName:@"Kitchen" status:@"Smoke Detected!"];
-    [self.detectorsCollectionView setRoomViewModels:@[livingRoom, diningRoom, kitchen]];
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+    [self.detectorsCollectionView setRoomViewModels:appDelegate.detectors];
     self.detectorsCollectionView.collectionViewDelegate = self;
 }
 

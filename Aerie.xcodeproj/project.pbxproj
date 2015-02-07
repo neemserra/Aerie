@@ -15,6 +15,9 @@
 		4D5885A71A85C373002F7AAC /* floorplan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D5885A61A85C373002F7AAC /* floorplan.jpg */; };
 		4DDE26F31A8462BB00A7055D /* EmergencyContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDE26F21A8462BB00A7055D /* EmergencyContactsViewController.m */; };
 		4DDE26F61A8476DD00A7055D /* EmergencyContactsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDE26F51A8476DD00A7055D /* EmergencyContactsView.m */; };
+		9B2D5FD71A866B96009BD3F4 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2D5FD51A866B96009BD3F4 /* Bolts.framework */; };
+		9B2D5FD81A866B96009BD3F4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2D5FD61A866B96009BD3F4 /* Parse.framework */; };
+		9B2D5FDA1A866BD0009BD3F4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2D5FD91A866BD0009BD3F4 /* StoreKit.framework */; };
 		9B30F5B21A831C8100A6FD34 /* detectors-fill.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B30F5A61A831C8100A6FD34 /* detectors-fill.png */; };
 		9B30F5B31A831C8100A6FD34 /* detectors-fill@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B30F5A71A831C8100A6FD34 /* detectors-fill@2x.png */; };
 		9B30F5B41A831C8100A6FD34 /* detectors-hollow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B30F5A81A831C8100A6FD34 /* detectors-hollow.png */; };
@@ -85,6 +88,9 @@
 		4DDE26F21A8462BB00A7055D /* EmergencyContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmergencyContactsViewController.m; sourceTree = "<group>"; };
 		4DDE26F41A8476DD00A7055D /* EmergencyContactsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmergencyContactsView.h; sourceTree = "<group>"; };
 		4DDE26F51A8476DD00A7055D /* EmergencyContactsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmergencyContactsView.m; sourceTree = "<group>"; };
+		9B2D5FD51A866B96009BD3F4 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		9B2D5FD61A866B96009BD3F4 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		9B2D5FD91A866BD0009BD3F4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		9B30F5A61A831C8100A6FD34 /* detectors-fill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "detectors-fill.png"; sourceTree = "<group>"; };
 		9B30F5A71A831C8100A6FD34 /* detectors-fill@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "detectors-fill@2x.png"; sourceTree = "<group>"; };
 		9B30F5A81A831C8100A6FD34 /* detectors-hollow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "detectors-hollow.png"; sourceTree = "<group>"; };
@@ -97,7 +103,7 @@
 		9B30F5AF1A831C8100A6FD34 /* settings-fill@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-fill@2x.png"; sourceTree = "<group>"; };
 		9B30F5B01A831C8100A6FD34 /* settings-hollow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-hollow.png"; sourceTree = "<group>"; };
 		9B30F5B11A831C8100A6FD34 /* settings-hollow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-hollow@2x.png"; sourceTree = "<group>"; };
-		9B4E0FA11A758B29006DC37A /* Aerie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aerie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B4E0FA11A758B29006DC37A /* Fireproof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fireproof.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B4E0FA51A758B29006DC37A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B4E0FA61A758B29006DC37A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9B4E0FA81A758B29006DC37A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -149,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B2D5FDA1A866BD0009BD3F4 /* StoreKit.framework in Frameworks */,
 				9B4E0FE51A759F13006DC37A /* libsqlite3.dylib in Frameworks */,
 				9B4E0FE31A759F09006DC37A /* libz.dylib in Frameworks */,
 				9B4E0FDF1A759EEF006DC37A /* SystemConfiguration.framework in Frameworks */,
@@ -157,7 +164,9 @@
 				9B4E0FD91A759ED1006DC37A /* MobileCoreServices.framework in Frameworks */,
 				9B4E0FD71A759EC5006DC37A /* CoreLocation.framework in Frameworks */,
 				9B4E0FD51A759EBA006DC37A /* CoreGraphics.framework in Frameworks */,
+				9B2D5FD71A866B96009BD3F4 /* Bolts.framework in Frameworks */,
 				9B4E0FD31A759EA8006DC37A /* CFNetwork.framework in Frameworks */,
+				9B2D5FD81A866B96009BD3F4 /* Parse.framework in Frameworks */,
 				9B4E0FCF1A759E93006DC37A /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +231,9 @@
 		9B4E0F981A758B28006DC37A = {
 			isa = PBXGroup;
 			children = (
+				9B2D5FD91A866BD0009BD3F4 /* StoreKit.framework */,
+				9B2D5FD51A866B96009BD3F4 /* Bolts.framework */,
+				9B2D5FD61A866B96009BD3F4 /* Parse.framework */,
 				9B4E0FE41A759F13006DC37A /* libsqlite3.dylib */,
 				9B4E0FE21A759F09006DC37A /* libz.dylib */,
 				9B4E0FDE1A759EEF006DC37A /* SystemConfiguration.framework */,
@@ -242,7 +254,7 @@
 		9B4E0FA21A758B29006DC37A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9B4E0FA11A758B29006DC37A /* Aerie.app */,
+				9B4E0FA11A758B29006DC37A /* Fireproof.app */,
 				9B4E0FBA1A758B29006DC37A /* AerieTests.xctest */,
 			);
 			name = Products;
@@ -337,7 +349,7 @@
 			);
 			name = Aerie;
 			productName = Aerie;
-			productReference = 9B4E0FA11A758B29006DC37A /* Aerie.app */;
+			productReference = 9B4E0FA11A758B29006DC37A /* Fireproof.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9B4E0FB91A758B29006DC37A /* AerieTests */ = {
@@ -369,7 +381,7 @@
 				TargetAttributes = {
 					9B4E0FA01A758B29006DC37A = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 9VPW79T9ZH;
+						DevelopmentTeam = PJAMK43GN8;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
 								enabled = 0;
@@ -586,7 +598,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Mark Sands (7T9NT45NP3)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -596,8 +609,8 @@
 				INFOPLIST_FILE = Aerie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5602a018-767d-4377-9af0-a3111ebccc05";
+				PRODUCT_NAME = Fireproof;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -606,7 +619,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Mark Sands (7T9NT45NP3)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -616,8 +630,8 @@
 				INFOPLIST_FILE = Aerie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5602a018-767d-4377-9af0-a3111ebccc05";
+				PRODUCT_NAME = Fireproof;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9B4E0FA01A758B29006DC37A"
-               BuildableName = "Aerie.app"
+               BuildableName = "Fireproof.app"
                BlueprintName = "Aerie"
                ReferencedContainer = "container:Aerie.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9B4E0FA01A758B29006DC37A"
-            BuildableName = "Aerie.app"
+            BuildableName = "Fireproof.app"
             BlueprintName = "Aerie"
             ReferencedContainer = "container:Aerie.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9B4E0FA01A758B29006DC37A"
-            BuildableName = "Aerie.app"
+            BuildableName = "Fireproof.app"
             BlueprintName = "Aerie"
             ReferencedContainer = "container:Aerie.xcodeproj">
          </BuildableReference>
@@ -94,7 +94,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9B4E0FA01A758B29006DC37A"
-            BuildableName = "Aerie.app"
+            BuildableName = "Fireproof.app"
             BlueprintName = "Aerie"
             ReferencedContainer = "container:Aerie.xcodeproj">
          </BuildableReference>

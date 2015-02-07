@@ -1,5 +1,6 @@
-//#import <Parse/Parse.h>
+#import <Parse/Parse.h>
 #import "AppDelegate.h"
+#import "DetectorViewModel.h"
 
 @interface AppDelegate ()
 
@@ -9,8 +10,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-//    [Parse setApplicationId:@"hDYfKAEThkm2emN2IBpnGpWOizlz6o7lypTbHkJs"
-//                  clientKey:@"7Oun0l803ROnfeQBvDzL4hBYvZaZSbzMNBzxPpuY"];
+    [Parse setApplicationId:@"hDYfKAEThkm2emN2IBpnGpWOizlz6o7lypTbHkJs"
+                  clientKey:@"7Oun0l803ROnfeQBvDzL4hBYvZaZSbzMNBzxPpuY"];
+    // Register for Push Notitications
     UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert |
                                                     UIUserNotificationTypeBadge |
                                                     UIUserNotificationTypeSound);
@@ -19,13 +21,20 @@
     [application registerUserNotificationSettings:settings];
     [application registerForRemoteNotifications];
     
+    DetectorViewModel *livingRoom = [[DetectorViewModel alloc] initWithName:@"Living Room" status:@"Normal"];
+    DetectorViewModel *diningRoom = [[DetectorViewModel alloc] initWithName:@"Dining Room" status:@"Normal"];
+    DetectorViewModel *kitchen = [[DetectorViewModel alloc] initWithName:@"Kitchen" status:@"Normal"];
+    self.detectors = [NSMutableArray arrayWithArray:@[livingRoom, diningRoom, kitchen]];
+    
     NSDictionary *notificationPayload = launchOptions[UIApplicationLaunchOptionsRemoteNotificationKey];
     if(notificationPayload) {
         NSString *message = [notificationPayload objectForKey:@"alert"];
-        if ([message containsString:@"Living Room"]) {
-            //change status of living room
-        } else if ([message containsString:@"Dining Room"]) {
-            //change status of dining room
+        if ([message containsString:@"Living"]) {
+            self.detectors[0] = [[DetectorViewModel alloc] initWithName:@"Living Room" status:@"Smoke detected!"];
+        } else if ([message containsString:@"Dining"]) {
+            self.detectors[1] = [[DetectorViewModel alloc] initWithName:@"Dining Room" status:@"Smoke Detected!"];
+        } else if ([message containsString:@"Kitchen"]) {
+            self.detectors[2] = [[DetectorViewModel alloc] initWithName:@"Kitchen" status:@"Smoke Detected!"];
         }
     }
     
@@ -40,20 +49,21 @@
 }
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-//    // Store the deviceToken in the current installation and save it to Parse.
-//    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
-//    [currentInstallation setDeviceTokenFromData:deviceToken];
-//    currentInstallation.channels = @[ @"global" ];
-//    [currentInstallation saveInBackground];
+    // Store the deviceToken in the current installation and save it to Parse.
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    [currentInstallation saveInBackground];
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-//    [PFPush handlePush:userInfo];
+    [PFPush handlePush:userInfo];
     NSString *message = [userInfo objectForKey:@"alert"];
-    if ([message containsString:@"Living Room"]) {
-        //change status of living room
-    } else if ([message containsString:@"Dining Room"]) {
-        //change status of dining room
+    if ([message containsString:@"Living"]) {
+        self.detectors[0] = [[DetectorViewModel alloc] initWithName:@"Living Room" status:@"Smoke detected!"];
+    } else if ([message containsString:@"Dining"]) {
+        self.detectors[1] = [[DetectorViewModel alloc] initWithName:@"Dining Room" status:@"Smoke Detected!"];
+    } else if ([message containsString:@"Kitchen"]) {
+        self.detectors[2] = [[DetectorViewModel alloc] initWithName:@"Kitchen" status:@"Smoke Detected!"];
     }
 }
 
