@@ -103,7 +103,7 @@
 		9B30F5AF1A831C8100A6FD34 /* settings-fill@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-fill@2x.png"; sourceTree = "<group>"; };
 		9B30F5B01A831C8100A6FD34 /* settings-hollow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-hollow.png"; sourceTree = "<group>"; };
 		9B30F5B11A831C8100A6FD34 /* settings-hollow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-hollow@2x.png"; sourceTree = "<group>"; };
-		9B4E0FA11A758B29006DC37A /* Fireproof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fireproof.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B4E0FA11A758B29006DC37A /* Aerie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aerie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B4E0FA51A758B29006DC37A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B4E0FA61A758B29006DC37A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9B4E0FA81A758B29006DC37A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -254,7 +254,7 @@
 		9B4E0FA21A758B29006DC37A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9B4E0FA11A758B29006DC37A /* Fireproof.app */,
+				9B4E0FA11A758B29006DC37A /* Aerie.app */,
 				9B4E0FBA1A758B29006DC37A /* AerieTests.xctest */,
 			);
 			name = Products;
@@ -349,7 +349,7 @@
 			);
 			name = Aerie;
 			productName = Aerie;
-			productReference = 9B4E0FA11A758B29006DC37A /* Fireproof.app */;
+			productReference = 9B4E0FA11A758B29006DC37A /* Aerie.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9B4E0FB91A758B29006DC37A /* AerieTests */ = {
@@ -609,7 +609,7 @@
 				INFOPLIST_FILE = Aerie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = Fireproof;
+				PRODUCT_NAME = Aerie;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -630,7 +630,7 @@
 				INFOPLIST_FILE = Aerie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = Fireproof;
+				PRODUCT_NAME = Aerie;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
