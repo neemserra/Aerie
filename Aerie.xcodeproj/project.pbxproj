@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D185C891A85C5E9008EF546 /* FloorPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D185C871A85C5E9008EF546 /* FloorPlanViewController.m */; };
+		4D185C8A1A85C5E9008EF546 /* FloorPlanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D185C881A85C5E9008EF546 /* FloorPlanViewController.xib */; };
+		4D58859E1A85B78C002F7AAC /* ContactDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D58859D1A85B78C002F7AAC /* ContactDetailViewController.m */; };
+		4D5885A11A85B8C3002F7AAC /* ContactDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5885A01A85B8C3002F7AAC /* ContactDetailView.m */; };
+		4D5885A31A85B8CF002F7AAC /* ContactDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D5885A21A85B8CF002F7AAC /* ContactDetailView.xib */; };
+		4D5885A71A85C373002F7AAC /* floorplan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D5885A61A85C373002F7AAC /* floorplan.jpg */; };
 		4DDE26F31A8462BB00A7055D /* EmergencyContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDE26F21A8462BB00A7055D /* EmergencyContactsViewController.m */; };
 		4DDE26F61A8476DD00A7055D /* EmergencyContactsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDE26F51A8476DD00A7055D /* EmergencyContactsView.m */; };
 		9B30F5B21A831C8100A6FD34 /* detectors-fill.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B30F5A61A831C8100A6FD34 /* detectors-fill.png */; };
@@ -66,6 +72,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D185C861A85C5E9008EF546 /* FloorPlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloorPlanViewController.h; sourceTree = "<group>"; };
+		4D185C871A85C5E9008EF546 /* FloorPlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloorPlanViewController.m; sourceTree = "<group>"; };
+		4D185C881A85C5E9008EF546 /* FloorPlanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FloorPlanViewController.xib; sourceTree = "<group>"; };
+		4D58859C1A85B78C002F7AAC /* ContactDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactDetailViewController.h; sourceTree = "<group>"; };
+		4D58859D1A85B78C002F7AAC /* ContactDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactDetailViewController.m; sourceTree = "<group>"; };
+		4D58859F1A85B8C3002F7AAC /* ContactDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactDetailView.h; sourceTree = "<group>"; };
+		4D5885A01A85B8C3002F7AAC /* ContactDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactDetailView.m; sourceTree = "<group>"; };
+		4D5885A21A85B8CF002F7AAC /* ContactDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactDetailView.xib; sourceTree = "<group>"; };
+		4D5885A61A85C373002F7AAC /* floorplan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = floorplan.jpg; sourceTree = "<group>"; };
 		4DDE26F11A8462BB00A7055D /* EmergencyContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmergencyContactsViewController.h; sourceTree = "<group>"; };
 		4DDE26F21A8462BB00A7055D /* EmergencyContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmergencyContactsViewController.m; sourceTree = "<group>"; };
 		4DDE26F41A8476DD00A7055D /* EmergencyContactsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmergencyContactsView.h; sourceTree = "<group>"; };
@@ -164,6 +179,14 @@
 				4DDE26F21A8462BB00A7055D /* EmergencyContactsViewController.m */,
 				4DDE26F41A8476DD00A7055D /* EmergencyContactsView.h */,
 				4DDE26F51A8476DD00A7055D /* EmergencyContactsView.m */,
+				4D58859F1A85B8C3002F7AAC /* ContactDetailView.h */,
+				4D5885A01A85B8C3002F7AAC /* ContactDetailView.m */,
+				4D5885A21A85B8CF002F7AAC /* ContactDetailView.xib */,
+				4D58859C1A85B78C002F7AAC /* ContactDetailViewController.h */,
+				4D58859D1A85B78C002F7AAC /* ContactDetailViewController.m */,
+				4D185C861A85C5E9008EF546 /* FloorPlanViewController.h */,
+				4D185C871A85C5E9008EF546 /* FloorPlanViewController.m */,
+				4D185C881A85C5E9008EF546 /* FloorPlanViewController.xib */,
 			);
 			name = "Emergency Contacts";
 			sourceTree = "<group>";
@@ -171,6 +194,7 @@
 		9B30F5BE1A831C8C00A6FD34 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4D5885A61A85C373002F7AAC /* floorplan.jpg */,
 				E0E915D71A84571000932103 /* splash.png */,
 				E0E915D81A84571000932103 /* splash@2x.png */,
 				E047189C1A84558800F20EB6 /* add.png */,
@@ -386,6 +410,7 @@
 				E047189E1A84558800F20EB6 /* add.png in Resources */,
 				E06AE46E1A8451370001FCDC /* arrow-red.png in Resources */,
 				9B5F57B81A7DDA6900ADEF03 /* DetectorCollectionViewCell.xib in Resources */,
+				4D5885A31A85B8CF002F7AAC /* ContactDetailView.xib in Resources */,
 				9B30F5B91A831C8100A6FD34 /* emergency-hollow@2x.png in Resources */,
 				9B30F5B31A831C8100A6FD34 /* detectors-fill@2x.png in Resources */,
 				9B30F5B81A831C8100A6FD34 /* emergency-hollow.png in Resources */,
@@ -397,6 +422,7 @@
 				9B30F5BC1A831C8100A6FD34 /* settings-hollow.png in Resources */,
 				9B30F5B71A831C8100A6FD34 /* emergency-fill@2x.png in Resources */,
 				E0E915DA1A84571000932103 /* splash@2x.png in Resources */,
+				4D5885A71A85C373002F7AAC /* floorplan.jpg in Resources */,
 				9B30F5B51A831C8100A6FD34 /* detectors-hollow@2x.png in Resources */,
 				E06AE4711A8451370001FCDC /* arrow-white@2x.png in Resources */,
 				9B30F5BB1A831C8100A6FD34 /* settings-fill@2x.png in Resources */,
@@ -404,6 +430,7 @@
 				9B4E0FB51A758B29006DC37A /* LaunchScreen.xib in Resources */,
 				9B30F5B61A831C8100A6FD34 /* emergency-fill.png in Resources */,
 				E0E915D91A84571000932103 /* splash.png in Resources */,
+				4D185C8A1A85C5E9008EF546 /* FloorPlanViewController.xib in Resources */,
 				9B4E0FB21A758B29006DC37A /* Images.xcassets in Resources */,
 				E06AE46F1A8451370001FCDC /* arrow-red@2x.png in Resources */,
 				9B30F5B41A831C8100A6FD34 /* detectors-hollow.png in Resources */,
@@ -424,13 +451,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D185C891A85C5E9008EF546 /* FloorPlanViewController.m in Sources */,
 				4DDE26F61A8476DD00A7055D /* EmergencyContactsView.m in Sources */,
 				9B57032D1A7F47D4002E69EA /* DetectorsViewController.m in Sources */,
 				9B5F57BB1A7DE1A700ADEF03 /* DetectorViewModel.m in Sources */,
 				9B5F57B31A7DDA4B00ADEF03 /* DetectorsCollectionView.m in Sources */,
 				9B5F57B71A7DDA6900ADEF03 /* DetectorCollectionViewCell.m in Sources */,
 				9B4E0FAA1A758B29006DC37A /* AppDelegate.m in Sources */,
+				4D58859E1A85B78C002F7AAC /* ContactDetailViewController.m in Sources */,
 				9B4E0FA71A758B29006DC37A /* main.m in Sources */,
+				4D5885A11A85B8C3002F7AAC /* ContactDetailView.m in Sources */,
 				9B53FCDF1A81DBE9002589CC /* DetectorStatusViewController.m in Sources */,
 				4DDE26F31A8462BB00A7055D /* EmergencyContactsViewController.m in Sources */,
 				9B53FCE21A81E098002589CC /* DetectorStatusView.m in Sources */,

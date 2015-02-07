@@ -12,6 +12,7 @@
     self.delegate = self;
     self.dataSource = self;
     
+
     self.contactsElements = @[@"Mom", @"Johnny Appleseed", @"Police Department", @"Fire Department"];
 }
 
@@ -20,7 +21,6 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 2;
 }
-
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section == 0) {
@@ -61,5 +61,21 @@
 }
 
 #pragma mark - Delegate
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return (indexPath.section == 0 && indexPath.row < self.contactsElements.count);
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    if (indexPath.section == 1) {
+        [self.observer floorPlanSelected];
+    }
+}
+
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
+    [self.observer contactSelectedAtIndex:indexPath.row];
+}
 
 @end
