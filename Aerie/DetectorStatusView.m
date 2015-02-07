@@ -35,6 +35,7 @@
 }
 
 - (IBAction)emergencyContactsButtonTapped:(id)sender {
+    [self.delegate emergencyButtonTapped];
 }
 
 - (IBAction)turnOffAlarmButtonTapped:(id)sender {

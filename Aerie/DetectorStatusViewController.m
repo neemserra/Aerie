@@ -25,4 +25,9 @@
     [self.delegate backButtonTapped];
 }
 
+-(void)emergencyButtonTapped {
+    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.tabBarController setSelectedIndex:1];
+}
+
 @end

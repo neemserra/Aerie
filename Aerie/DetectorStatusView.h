@@ -4,6 +4,7 @@
 @protocol DetectorStatusViewDelegate <NSObject>
 
 -(void)backButtonTapped;
+-(void)emergencyButtonTapped;
 
 @end
 
